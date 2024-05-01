@@ -25,6 +25,10 @@ inputs:
     description: "Install kubectl"
     default: "yes"
     required: false
+  install-helmfile:
+    description: "Install helmfile"
+    default: "no"
+    required: false
   install-helm:
     description: "Install helm"
     default: "yes"

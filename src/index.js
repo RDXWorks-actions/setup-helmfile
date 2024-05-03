@@ -19,7 +19,9 @@ async function run() {
     if (additionalPlugins !== "") {
       installHelmPlugins(additionalPlugins.split(',').map(str => str.trim()));
     }
-    installHelmfile(core.getInput("helmfile-version"));
+    if (core.getInput("install-helmfile") === "yes") {
+      installHelmfile(core.getInput("helmfile-version"));
+    }
   } catch (error) {
     core.setFailed(error.message);
   }

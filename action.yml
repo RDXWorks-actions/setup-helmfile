@@ -7,19 +7,19 @@ branding:
 inputs:
   kubectl-version:
     description: "kubectl (AWS edition) version"
-    default: "1.29.0"
+    default: "1.27.12"
     required: false
   kubectl-release-date:
     description: "kubectl (AWS edition) release date"
-    default: "2024-01-04"
+    default: "2024-04-19"
     required: false
   helm-version:
     description: "Helm version"
-    default: "v3.14.0"
+    default: "v3.14.4"
     required: false
   helmfile-version:
     description: "helmfile version"
-    default: "v0.161.0"
+    default: "v0.163.1"
     required: false
   install-kubectl:
     description: "Install kubectl"
@@ -29,13 +29,17 @@ inputs:
     description: "Install helm"
     default: "yes"
     required: false
+  install-helmfile:
+    description: "Install helmfile"
+    default: "yes"
+    required: false
   install-helm-plugins:
     description: "Install Helm plugins"
     default: "yes"
     required: false
   helm-diff-plugin-version:
     description: "Version of the helm diff plugin to install"
-    default: "master"
+    default: "v3.9.5"
     required: false
   helm-s3-plugin-version:
     description: "Version of the helm s3 plugin to install"

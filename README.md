@@ -32,13 +32,14 @@ jobs:
 > This action requires Node 20 or later on the runner. If you are using GitHub-managed runners, no action is needed. If you are using self-hosted runners, make sure the system version of Node is version 20 or higher.
 
 ## Optional Inputs
-- `helmfile-version` : helmfile version. Default `"v0.161.0"`.
-- `helm-version` : Helm version. Default `"v3.14.0"`
-- `kubectl-version` : kubectl version. Default `1.29.0`
-- `kubectl-release-date` : kubectl release date. Default `2024-01-04`
-- `install-kubectl` : Install kubectl. Default `yes`
-- `install-helm` : Install Helm. Default `yes`
-- `install-helm-plugins` : Install Helm plugins. Default `yes`
+- `helmfile-version` : helmfile version. Default `"v0.163.1"`.
+- `helm-version` : Helm version. Default `"v3.14.4"`
+- `kubectl-version` : kubectl version. Default `1.27.13`
+- `kubectl-release-date` : kubectl release date. Default `2024-04-19`
+- `install-kubectl` : Install kubectl. Default `no`
+- `install-helm` : Install Helm. Default `no`
+- `install-helm` : Install Helm. Default `no`
+- `install-helm-plugins` : Install Helm plugins. Default `no`
 - `helm-diff-plugin-version` : Plugin version to install. Default `master`
 - `helm-s3-plugin-version` : Plugin version to install. Default `master`
 - `additional-helm-plugins` : A comma separated list of additional helm plugins to install. Should be a valid argument after `helm plugin install`.

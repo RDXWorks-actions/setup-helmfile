@@ -23,23 +23,23 @@ inputs:
     required: false
   install-kubectl:
     description: "Install kubectl"
-    default: "no"
+    default: "yes"
     required: false
   install-helm:
     description: "Install helm"
-    default: "no"
+    default: "yes"
     required: false
   install-helmfile:
     description: "Install helmfile"
-    default: "no"
+    default: "yes"
     required: false
   install-helm-plugins:
     description: "Install Helm plugins"
-    default: "no"
+    default: "yes"
     required: false
   helm-diff-plugin-version:
     description: "Version of the helm diff plugin to install"
-    default: "master"
+    default: "v3.9.5"
     required: false
   helm-s3-plugin-version:
     description: "Version of the helm s3 plugin to install"
